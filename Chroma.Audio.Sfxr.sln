@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChromaSfxrExample", "ChromaSfxrExample\ChromaSfxrExample.csproj", "{D1E26B30-F41D-4A45-87BB-DF38D13C140D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chroma.Audio.Sfxr", "Chroma.Audio.Sfxr\Chroma.Audio.Sfxr.csproj", "{7A683C55-9C63-44AD-BE4D-EE1948D43AB0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1E26B30-F41D-4A45-87BB-DF38D13C140D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1E26B30-F41D-4A45-87BB-DF38D13C140D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1E26B30-F41D-4A45-87BB-DF38D13C140D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1E26B30-F41D-4A45-87BB-DF38D13C140D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A683C55-9C63-44AD-BE4D-EE1948D43AB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A683C55-9C63-44AD-BE4D-EE1948D43AB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A683C55-9C63-44AD-BE4D-EE1948D43AB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A683C55-9C63-44AD-BE4D-EE1948D43AB0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
