@@ -1,14 +1,16 @@
 using System;
 using System.IO;
+using Chroma.Extensibility;
 
 namespace Chroma.Audio.Sfxr
 {
-    public static class Sfxr
+    [EntryPoint]
+    internal sealed class Sfxr
     {
-        public static void Initialize(Game game)
+        internal Sfxr(Game game)
         {
             game.Content.RegisterImporter<SfxrWaveform>(
-                ((path, args) =>
+                (path, args) =>
                 {
                     if (args.Length != 1)
                         throw new ArgumentException("SfxrWaveform requires a parameter format argument for import.");
@@ -20,7 +22,7 @@ namespace Chroma.Audio.Sfxr
                             new SfxrParams(fs, format)
                         );
                     }
-                })
+                }
             );
         }
     }

@@ -28,8 +28,6 @@ namespace ChromaSfxrExample
 
         public GameCore() : base(new GameStartupOptions(false))
         {
-            Sfxr.Initialize(this);
-
             _coinWaveform = new(_coinParams);
             _laserWaveform = new(_laserParams);
             _explosionWaveform = new(_explosionParams);

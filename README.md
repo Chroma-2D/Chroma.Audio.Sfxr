@@ -3,7 +3,7 @@ Utilizing the flexible audio system of Chroma Engine, it is possible to create a
 
 ### Usage
 Clone the project and add it as a reference to your project or install the NuGet package `Chroma.Audio.Sfxr`.  
-Once done, you can optionally initialize the content importer using `Chroma.Audio.Sfxr.Sfxr.Initialize(Game)` from your game's constructor.
+No actions are required for initialization - the library utilizes the extension system built into Chroma.
 
 #### Importing files
 This satellite library supports importing both as3sfxr's parameter format and original sfxr's binary format versions 100, 101 and 102. To import using the built-in content provider after initialization, you should use:
