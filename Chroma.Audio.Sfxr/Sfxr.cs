@@ -9,6 +9,14 @@ namespace Chroma.Audio.Sfxr
     {
         internal Sfxr(Game game)
         {
+            Initialize(game);
+        }
+
+        public static void Initialize(Game game)
+        {
+            if (game.Content.IsImporterPresent<SfxrWaveform>())
+                game.Content.UnregisterImporter<SfxrWaveform>();
+
             game.Content.RegisterImporter<SfxrWaveform>(
                 (path, args) =>
                 {

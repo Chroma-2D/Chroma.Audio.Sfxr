@@ -10,7 +10,7 @@
         <Title>Chroma SFXR Playback Engine</Title>
         <Description>Sfxr playback engine for Chroma Framework</Description>
         <PackageId>Chroma.Audio.Sfxr</PackageId>
-        <Version>1.0.1</Version>
+        <Version>1.1.0</Version>
         <Authors>Ciastex</Authors>
         <RepositoryType>git</RepositoryType>
         <RepositoryUrl>https://github.com/Chroma-2D/Chroma.Audio.Sfxr</RepositoryUrl>
