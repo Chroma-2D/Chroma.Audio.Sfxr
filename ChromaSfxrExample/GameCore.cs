@@ -24,7 +24,7 @@ namespace ChromaSfxrExample
         private readonly SfxrWaveform _laserWaveform;
         private readonly SfxrWaveform _explosionWaveform;
         private readonly SfxrWaveform _sirenWaveform;
-        private readonly SfxrWaveform _boomWaveform;
+        private SfxrWaveform _boomWaveform;
 
         public GameCore() : base(new GameStartupOptions(false))
         {
@@ -32,6 +32,10 @@ namespace ChromaSfxrExample
             _laserWaveform = new(_laserParams);
             _explosionWaveform = new(_explosionParams);
             _sirenWaveform = new(_sirenParams);
+        }
+
+        protected override void LoadContent()
+        {
             _boomWaveform = Content.Load<SfxrWaveform>("Sound/boom.sfxr", ParameterFormat.Binary);
         }
 
