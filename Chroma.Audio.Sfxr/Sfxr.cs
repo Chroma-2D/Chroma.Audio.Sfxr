@@ -5,8 +5,13 @@ namespace Chroma.Audio.Sfxr
 {
     public sealed class Sfxr
     {
+        private static bool _initialized;
+        
         public static void Initialize(Game game)
         {
+            if (_initialized)
+                throw new InvalidOperationException("Sfxr was already initialized.");
+            
             if (game.Content.IsImporterPresent<SfxrWaveform>())
                 game.Content.UnregisterImporter<SfxrWaveform>();
 
@@ -25,6 +30,8 @@ namespace Chroma.Audio.Sfxr
                     }
                 }
             );
+
+            _initialized = true;
         }
     }
 }
