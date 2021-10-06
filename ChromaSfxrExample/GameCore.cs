@@ -36,6 +36,8 @@ namespace ChromaSfxrExample
 
         protected override void LoadContent()
         {
+            Sfxr.Initialize(this);
+
             _boomWaveform = Content.Load<SfxrWaveform>("Sound/boom.sfxr", ParameterFormat.Binary);
         }
 

@@ -10,7 +10,7 @@
         <Title>Chroma SFXR Playback Engine</Title>
         <Description>Sfxr playback engine for Chroma Framework</Description>
         <PackageId>Chroma.Audio.Sfxr</PackageId>
-        <Version>1.2.0</Version>
+        <Version>2.0.0</Version>
         <Authors>Ciastex</Authors>
         <RepositoryType>git</RepositoryType>
         <RepositoryUrl>https://github.com/Chroma-2D/Chroma.Audio.Sfxr</RepositoryUrl>
@@ -18,10 +18,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Chroma" Version="0.48.0"/>
-    </ItemGroup>
-    
-    <ItemGroup>
-        <AssemblyAttribute Include="Chroma.Extensibility.ChromaExtensionAttribute" />
+        <PackageReference Include="Chroma" Version="0.50.0" />
     </ItemGroup>
 </Project>

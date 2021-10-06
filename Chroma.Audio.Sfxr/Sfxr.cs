@@ -1,17 +1,10 @@
 using System;
 using System.IO;
-using Chroma.Extensibility;
 
 namespace Chroma.Audio.Sfxr
 {
-    [EntryPoint]
-    internal sealed class Sfxr
+    public sealed class Sfxr
     {
-        internal Sfxr(Game game)
-        {
-            Initialize(game);
-        }
-
         public static void Initialize(Game game)
         {
             if (game.Content.IsImporterPresent<SfxrWaveform>())
